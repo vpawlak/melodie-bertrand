@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+/* ── Charte graphique (à ajuster) ── */
+@theme {
+  --color-creme: #fff7eb;    /* fond de page */
+  --color-ivoire: #fffcf7;   /* cartes (teinte plus claire de la crème) */
+  --color-foret: #254a1c;    /* texte principal, boutons */
+  --color-sauge: #8a9a86;    /* fonds doux, filets */
+  --color-bordeaux: #84464d; /* accent : « et », jours, repère actif */
+  --color-terre: #6b5b41;    /* texte secondaire, pictogrammes */
+  --color-trait: color-mix(in srgb, #8a9a86 45%, #fff7eb); /* bordures */
+   --font-display: "Playfair Display", Georgia, serif;
+  --font-sans: "Montserrat", system-ui, sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+body { background: var(--color-creme); color: var(--color-foret); font-family: var(--font-sans); -webkit-font-smoothing: antialiased; }
+:focus-visible { outline: 2px solid var(--color-terre); outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; animation: none !important; } }
