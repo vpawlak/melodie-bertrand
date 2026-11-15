@@ -1,4 +1,4 @@
-import { Church, Wine, Utensils, Music, Coffee, BedDouble, Bus, House, EggFried, CableCar, Utensils } from "lucide-react";
+import { Church, Wine, Utensils, Music, Coffee, BedDouble, Bus, House, EggFried, CableCar } from "lucide-react";
 
 // J'ai retenu le samedi 27 mars 2027. Modifiez ici, tout le site se met à jour.
 export const WEDDING = {
