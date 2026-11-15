@@ -14,6 +14,14 @@
 }
 
 html { scroll-behavior: smooth; }
+ 
+/* Petit tressautement du bus pendant qu'il roule */
+@keyframes bus-wobble {
+  0%, 100% { transform: translateY(0) rotate(-2.5deg); }
+  50% { transform: translateY(-3px) rotate(2.5deg); }
+}
+.bus-wobble { animation: bus-wobble 0.3s ease-in-out infinite; transform-origin: 50% 90%; }
 body { background: var(--color-creme); color: var(--color-foret); font-family: var(--font-sans); -webkit-font-smoothing: antialiased; }
 :focus-visible { outline: 2px solid var(--color-terre); outline-offset: 3px; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; animation: none !important; } }
+ 
