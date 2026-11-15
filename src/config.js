@@ -1,4 +1,4 @@
-import { Church, Wine, UtensilsCrossed, Music, Coffee, BedDouble, Bus, House, EggFried, CableCar } from "lucide-react";
+import { Church, Wine, Utensils, Music, Coffee, BedDouble, Bus, House, EggFried, CableCar, Utensils } from "lucide-react";
 
 // J'ai retenu le samedi 27 mars 2027. Modifiez ici, tout le site se met à jour.
 export const WEDDING = {
@@ -18,13 +18,13 @@ export const FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSeb8hhAcJh7KHZ
 export const PROGRAMME = [
   { day: "Vendredi", items: [
     { time: "", title: "Accueil des invités", icon: BedDouble },
-    { time: "", title: "Dîner façon Auberge Espagnole", icon: wine },
+    { time: "", title: "Dîner façon Auberge Espagnole", icon: Wine },
   ]},
   { day: "Samedi", items: [
     { time: "8h30", title: "Départ en bus depuis Excenevex", icon: Bus },
     { time: "9h", title: "Cérémonie à la Mairie de Sciez", icon: House },
     { time: "10h30", title: "Départ pour Thollon-Les-Mémises", icon: Bus },
-    { time: "12h", title: "Déjeuner", icon: UtensilsCrossed },
+    { time: "12h", title: "Déjeuner", icon: Utensils },
     { time: "17h", title: "Dernier téléphérique pour la redescente ", icon: CableCar },
     { time: "18h", title: "Dîner et Soirée", icon: Music },
   ]},
