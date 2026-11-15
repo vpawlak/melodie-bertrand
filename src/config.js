@@ -29,15 +29,16 @@ export const PROGRAMME = [
     { time: "18h", title: "Dîner et Soirée", icon: Music },
   ]},
   { day: "Dimanche", items: [
-    { time: "", title: "Brunch", icon: Coffee },
+    { time: "", title: "Brunch convivial à la maison", icon: Coffee },
   ]},
 ];
 
-// Carte : placez votre image dans /public/carte.jpg
+// Carte : image dans /public/carte.webp
 // x et y = position du bouton sur l’image, en %.
-export const MAP_IMAGE = "/carte.jpg";
+export const MAP_IMAGE = "/src/public/carte.webp";
 export const MAP_POINTS = [
-  { id: "ceremonie", label: "Cérémonie", icon: Church, x: 30, y: 40, time: "À définir", address: "Adresse à définir, Sciez" },
-  { id: "reception", label: "Réception", icon: UtensilsCrossed, x: 62, y: 58, time: "À définir", address: "Adresse à définir, Sciez" },
-  { id: "hebergement", label: "Hébergement", icon: BedDouble, x: 48, y: 26, time: "À définir", address: "Adresse à définir, Sciez" },
+  { id: "ceremonie", label: "Cérémonie", icon: Church, x: 47, y: 43, time: "À définir", address: "Mairie de Sciez" },
+  { id: "cocktail", label: "Cocktail", icon: Wine, x: 85, y: 27, time: "À définir", address: "Adresse à définir, Sciez" },
+  { id: "soiree", label: "Dîner & soirée", icon: Music, x: 17, y: 12, time: "À définir", address: "Adresse à définir, Sciez" },
+  { id: "hebergement", label: "Hébergement", icon: BedDouble, x: 15, y: 85, time: "À définir", address: "Adresse à définir, Sciez" },
 ];
