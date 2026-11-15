@@ -35,10 +35,10 @@ export const PROGRAMME = [
 
 // Carte : image dans /public/carte.webp
 // x et y = position du bouton sur l’image, en %.
-export const MAP_IMAGE = "/carte.png";
+export const MAP_IMAGE = "/src/carte.png";
 // Votre propre image de bus (PNG/WebP transparent, tourné vers la droite) : placez-la dans /public
 // puis indiquez par exemple "/bus.png". Laissez vide pour garder le bus dessiné par défaut.
-export const BUS_IMAGE = "/bus.png";
+export const BUS_IMAGE = "/src/bus.png";
 export const MAP_POINTS = [
   { id: "ceremonie", label: "Cérémonie", icon: Church, x: 47, y: 60, time: "9h", address: "Mairie de Sciez, \n614 Av. de Sciez,\n 74140 Sciez" },
   { id: "cocktail", label: "Cocktail et déjeuner", icon: Wine, x: 85, y: 40, time: "12h", address: "Les Balcons du Lac\n70 imp du Schuss\n74500 Thollon-les-Mémises" },
