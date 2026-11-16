@@ -1,6 +1,6 @@
 import { Church, Wine, Utensils, Music, Coffee, BedDouble, Bus, House, EggFried, CableCar } from "lucide-react";
-import carte from "/carte.png";
-import bus from "/bus.png";
+import carte from "./carte.png";
+import bus from "./bus.png";
 
 // J'ai retenu le samedi 27 mars 2027. Modifiez ici, tout le site se met à jour.
 export const WEDDING = {
@@ -31,7 +31,7 @@ export const PROGRAMME = [
     { time: "18h", title: "Dîner et Soirée", icon: Music },
   ]},
   { day: "Dimanche", items: [
-    { time: "11h", title: "Brunch convivial à la maison", icon: Coffee },
+    { time: "11h", title: "Brunch convivial à Excenevex", icon: Coffee },
   ]},
 ];
 
@@ -42,8 +42,9 @@ export const MAP_IMAGE = carte;
 // puis indiquez par exemple "/bus.png". Laissez vide pour garder le bus dessiné par défaut.
 export const BUS_IMAGE = bus;
 export const MAP_POINTS = [
-  { id: "ceremonie", label: "Cérémonie", icon: Church, x: 47, y: 60, time: "9h", address: "Mairie de Sciez, \n614 Av. de Sciez,\n 74140 Sciez" },
+  {id: "matin", label: "Petit déjeuner avant le départ", icon: Coffee, x: 8, y: 28, time: "8h", address: "Centre de vacances Stelia Airbus \n1191 Rte du Lac \n74140 Excenevex" },
+  { id: "ceremonie", label: "Cérémonie", icon: Church, x: 47, y: 60, time: "9h", address: "Mairie de Sciez \n614 Av. de Sciez\n 74140 Sciez" },
   { id: "cocktail", label: "Cocktail et déjeuner", icon: Wine, x: 85, y: 40, time: "12h", address: "Les Balcons du Lac\n70 imp du Schuss\n74500 Thollon-les-Mémises" },
-  { id: "soiree", label: "Dîner & soirée", icon: Music, x: 17, y: 28, time: "18h", address: "Centre de vacances Stelia Airbus \n1191 Rte du Lac \n74140 Excenevex" },
-  { id: "brunch", label: "Brunch à la maison", icon: EggFried , x: 15, y: 65, time: "Dimanche - 11h", address: "73 chemin des Huches \n74140 Sciez" },
+  { id: "soiree", label: "Dîner & soirée et Hébergement", icon: Music, x: 17, y: 28, time: "18h", address: "Centre de vacances Stelia Airbus \n1191 Rte du Lac \n74140 Excenevex" },
+  //{ id: "brunch", label: "Brunch à la maison", icon: EggFried , x: 15, y: 65, time: "Dimanche - 11h", address: "73 chemin des Huches \n74140 Sciez" },
 ];
