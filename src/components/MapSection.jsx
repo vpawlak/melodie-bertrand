@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Clock, MapPin } from "lucide-react";
+import { Clock, Info, MapPin } from "lucide-react";
 import { MAP_IMAGE, MAP_POINTS } from "../config.js";
 import Bus from "./Bus.jsx";
 
@@ -36,7 +36,7 @@ export default function MapSection() {
     <section className="mx-auto max-w-3xl px-4 py-20" aria-labelledby="carte">
       <h2 id="carte" className="text-center font-display text-4xl sm:text-5xl">Les lieux</h2>
       <p className="mt-3 text-center text-sm text-terre">
-        Adresses et horaires du weekend.
+        Retrouvez toutes les adresses pour ce weekend.
       </p>
 
       <div className="relative mt-8 aspect-[4/3] overflow-hidden rounded-3xl border border-trait bg-gradient-to-br from-sauge/40 to-bordeaux/15">
@@ -69,7 +69,7 @@ export default function MapSection() {
         {/* Le bus : se déplace (left/top), s'incline (rotate) et se retourne selon la direction (scaleX) */}
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute z-10 w-30 sm:w-25"
+          className="pointer-events-none absolute z-10 w-14 sm:w-20"
           style={{
             left: `${busPoint.x}%`,
             top: `${busPoint.y}%`,
@@ -97,6 +97,12 @@ export default function MapSection() {
           <MapPin size={16} className="mt-1 shrink-0 text-terre" aria-hidden />
           <span className="min-w-0 whitespace-pre-line break-words">{active.address}</span>
         </p>
+        {active.detail && (
+          <p className="mt-2 flex items-start gap-2 text-sm italic text-terre">
+            <Info size={16} className="mt-0.5 shrink-0" aria-hidden />
+            <span className="min-w-0 whitespace-pre-line break-words">{active.detail}</span>
+          </p>
+        )}
       </div>
     </section>
   );
